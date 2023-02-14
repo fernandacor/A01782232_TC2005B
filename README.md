@@ -1,25 +1,7 @@
 # <p align="center">TC2005B.401 - Construcción de Software y Toma de Decisiones</p>
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-<!-- LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/fernandacor/A01782232_TC2005B">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a> 
-</div>
-
 <h2 align="center">Repositorio de Tareas</h2>
 
-<!-- TABLE OF CONTENTS -->
+<!-- TABLA DE CONTENIDOS -->
 <details>
   <summary>Tabla de Contenidos</summary>
   <ol>
@@ -48,23 +30,20 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
+<!-- SOBRE EL CURSO -->
 ## Sobre el Curso
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `fernandacor`, `A01782232_TC2005B`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+El curso es una unidad de formación de tipo bloque, es decir que incluye la enseñanza de múltiples tópicos en la que distintos profesores participan con el propósito de que el alumno implemente un sistema de software operacional en base a un reto propuesto por un socio formador.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+Durante este bloque, el socio formador será Espora Estudio, una organización de desarrollo interactivo de software, tiendas en línea y apps. 
 
 
 ### Profesores 
-<p align="left">
-  Gilberto Echeverria 
-  <br />
-  Esteban Castillo
-  <br />
-  Octavio Navarro
-</p>
+<ul>
+  <li>Dr. Gilberto Echeverria Furió --> Desarrollo de videojuegos</li>
+  <li>Dr. Esteban CastilloJuarez --> Creación de bases de datos</li>
+  <li>Dr. Octavio Navarro Hinojosa --> Desarrollo de páginas web</li>
+</ul>
 
 ### Temario
 <p align="left">
@@ -78,13 +57,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 </p>
 
 
-
-<!-- GETTING STARTED -->
+<!-- SITUACIÓN PROBLEMA -->
 ## Situación Problema
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Contexto
 
 <p>Un simulador computacional es una herramienta de software que permite la reproducción del comportamiento de un sistema real, su aplicación abarca a la gran mayoría de dominios de conocimiento: económico, social, financiero, empresarial. La reproducción del comportamiento se hace mediante la creación de eventos, acciones y respuestas que imitan, con un cierto nivel de fidelidad, la conducta de un sistema.
@@ -108,19 +82,12 @@ Los simuladores son creados con varios objetivos:
 
 ### Reto
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/fernandacor/A01782232_TC2005B.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+Construir un simulador computacional que reproduzca el comportamiento parcial de un sistema empresarial, económico, social, político, educativo. Este simulador permitirá el análisis de escenarios actuales o futuros para el apoyo en la toma de decisiones hacia la mejora de alguno de los procesos, o componentes del sistema. El simulador tendrá una interfaz gráfica equiparable a un videojuego 2D o 3D.
+
+### Características mínimas del sistema.
+Sistema de software basado en modelo cliente-servidor, implementado en web con capacidad de conexión a una base de datos relacional. Con visualización de indicadores de control basada en técnicas de videojuegos (tableros 2D, 3D, múltiples cámaras) para el apoyo a la toma de decisiones en la solución de un problema específico de una empresa (socio formador).
+
+La especificación del problema a abordar se realiza en conjunto con el socio formador
    
 ### Etapas
 <ol type="I">
@@ -147,54 +114,17 @@ Los simuladores son creados con varios objetivos:
     </ul> 
 </ol>
 
-###Entregables
+### Entregables
+<ol type="I">
+  <li>Ciclo 0 - Prototipo (<em>MockUp</em>)</li>
+  <li>Ciclo 1 - Integración del prototipo a la estructura de la base de datos. Conversión del <em>Mockup</em> a prototipo desarrollado en plataforma tecnológica con capacidad de navegación por los diferentes caminos de ejecución de los casos de uso</li>
+  <li>Ciclo 2 - Mejora continua del prototipo para que satisfaga al menos 75% de los caminos de ejecución (flujos de información).</li>
+  <li>Ciclo 3 - Entrega Final. El producto final contiene la totalidad de los flujos de información requeridos.</li>
+</ol>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-  
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- CONTACT -->
+<!-- CONTACTO -->
 ## Contacto
 
 Fernanda Cantú Ortega - [@a01782232](https://twitter.com/a01782232) - a01782232@tec.mx
 
 Link del Proyecto: [https://github.com/fernandacor/A01782232_TC2005B](https://github.com/fernandacor/A01782232_TC2005B)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-  
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
