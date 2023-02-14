@@ -33,8 +33,10 @@
     <li>
       <a href="#situación_problema">Situación Problema</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#contexto">Contexto</a></li>
+        <li><a href="#reto">Reto</a></li>
+        <li><a href="#etapas">Etapas</a></li>
+        <li><a href="#entregables">Entregables</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -83,15 +85,28 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Contexto
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+<p>Un simulador computacional es una herramienta de software que permite la reproducción del comportamiento de un sistema real, su aplicación abarca a la gran mayoría de dominios de conocimiento: económico, social, financiero, empresarial. La reproducción del comportamiento se hace mediante la creación de eventos, acciones y respuestas que imitan, con un cierto nivel de fidelidad, la conducta de un sistema.
+  
+Los simuladores son creados con varios objetivos:
+  <ul>
+    <li>mejorar el entendimiento de un problema complejo</li>
+    <li>entrenar a las personas involucradas en el diseño, operación o mantenimiento de un sistema</li>
+    <li>prospectar patrones de comportamientos futuros</li>
+    <li>analizar el comportamiento del sistema en situaciones extremas, sin poner en riesgo el sistema real</li>
+    </ul>
+    
+ Los simuladores computacionales son sistemas complejos que se componen de varios componentes entre los que destacan:
+   <ul>
+    <li>Módulo de base de datos, donde se almacena la información referente al sistema que emula</li>
+    <li>Módulo de interfaz gráfica, que permite la interacción con el usuario; existe una categoría videojuegos considerada como simuladores ya que hacen la re-creación muy precisa de sistemas complejos.</li>
+    <li>prospectar patrones de comportamientos futuros</li>
+    <li>analizar el comportamiento del sistema en situaciones extremas, sin poner en riesgo el sistema real</li>
+    </ul>
+    
 
-### Installation
+### Reto
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -106,6 +121,33 @@ This is an example of how to list things you need to use the software and how to
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
+   
+### Etapas
+<ol type="I">
+  <li>Ciclo 0</li>
+    <ul>
+      <li>¿Cómo capturar y representar los requerimientos funcionales y no funcionales del reto?</li>
+      <li>¿Cómo crear una maqueta inicial que transmita la forma en que el sistema que se va a crear resuelva los requerimientos del punto anterior?</li>
+    </ul> 
+  
+  <li>Ciclo 1 - Integración de Base de Datos</li>
+      <ul>
+      <li>¿Cómo representar la estructura de información necesaria para la solución del reto?</li>
+      <li>¿Cómo crear un prototipo funcional inicial que cumpla con los requerimientos del reto?</li>
+    </ul> 
+  
+  <li>Ciclo 2 - Refinamiento del Prototipo</li>
+      <ul>
+      <li>¿Cómo realizar la mejora continua en el desarrollo del proyecto que soluciona el reto?</li>
+    </ul> 
+  
+  <li>Ciclo 3 - Entrega Final</li>
+      <ul>
+      <li>¿Cómo comprobar la efectividad del producto final al ser usado por el socio formador en entorno real?</li>
+    </ul> 
+</ol>
+
+###Entregables
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
