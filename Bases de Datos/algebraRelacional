@@ -1,0 +1,95 @@
+### Fernanda Cantú Ortega A01782232
+# Ejercicios Algebra Relacional
+
+| COMPETENCIA  |  |
+| -- | -- |
+| STRING | NombreCompetencia |
+| INTEGER | NumPtos |
+| STRING | Tipos |
+
+| PARTICIPANTE  |  |
+| -- | -- |
+| INTEGER | Numero |
+| STRING | Apellidos |
+| STRING | Nombre |
+| STRING | Nacionalidad |
+
+| PUNTOSACUMULADOS  |  |
+| -- | -- |
+| INTEGER | Numero |
+| INTEGER | Puntos |
+
+| CLASIFICACIÓN  |  |
+| -- | -- |
+| STRING | NombreCompetencia |
+| INTEGER | Numero |
+| INTEGER | Lugar |
+
+
+## **Consultas**
+
+**1. Apellidos y nombre de los participantes de nacionalidad mexicana.** <br>
+
+$\pi$ Nombre, Apellidos ($^\sigma$ $_{Nacionalidad = "Mexicano"}$ (PARTICIPANTE))
+
+<br>
+
+**2. Apellidos, nombre y puntos acumulados de los participantes de USA.** <br>
+
+$\pi$ Nombre, Apellidos, Puntos ($^\sigma$ $_{Nacionalidad = "Estadounidense"}$ (PARTICIPANTE $\bowtie$ PUNTOSACUMULADOS))
+
+<br>
+
+**3. Apellidos y nombre de los participantes que se clasificaron en primer lugar en al menos una competencia.** <br>
+
+$\pi$ Nombre, Apellidos ($^\sigma$ $_{Lugar = "1°"}$ (PARTICIPANTE $\bowtie$ CLASIFICACION))
+
+<br>
+
+**4. Nombre de las competencias en las que intervinieron los participantes mexicanos.** <br>
+
+$\pi$ NombreCompetencia ($^\sigma$ $_{Nacionalidad = "Mexicano"}$ (PARTICIPANTE $\bowtie$ COMPETENCIA))
+
+<br>
+
+**5. Apellidos y nombre de los participantes que nunca se clasificaron en primer lugar en alguna competencia.** <br>
+$\pi$ Nombre, Apellidos ($^\sigma$ $_{Lugar \neq "1°"}$ (Clasificación))(Participante)
+
+R1 = $\pi$ Nombre, Apellidos (PARTICIPANTE) <br>
+R2 = $\pi$ Nombre, Apellidos ($^\sigma$ $_{Lugar = "1°"}$) (PARTICIPANTE $\bowtie$ CLASIFICACIÓN)
+
+R1-R2
+
+<br>
+
+**6. Apellidos y nombre de los participantes siempre se clasificaron en alguna competencia.** <br>
+R1 = $\pi$ Nombre, Apellidos (PARTICIPANTE) <br>
+R2 = $\pi$ Nombre, Apellidos (PARTICIPANTE $\bowtie$ CLASIFICACIÓN)
+
+R1 $\cap$ R2
+
+<br>
+
+**7. Nombre de la competencia que aporta el máximo de puntos.** <br>
+<!-- | COMPETENCIA  |  | |
+| -- | -- | -- |
+| NombreCompetencia | NumPtos | Tipo |
+| Nado sincronizado | 42 | Natación |
+| Carrera de 100 mts | 60 | Atletismo |
+| Lanzamiento de jabalina | 40 | Atletismo |
+| Gimnasia ritmica | 81 | Gimnasia |
+| Clavados | 60 | Natación | -->
+
+$\pi$ NombreCompetencia ($^\sigma$ $_{NumPtos = MAX}$ (COMPETENCIA))
+
+<br>
+
+**8. Países (nacionalidades) que participaron en todas las competencias.** <br>
+R1 = $\pi$ Nacionalidad (PARTICIPANTE) <br>
+R2 = $\pi$ Nacionalidad (PARTICIPANTE $\bowtie$ CLASIFICACIÓN)
+
+R3 = R1 + R2
+
+para la 8, nos recomienda que independientemente de como lo planteemos, expliquemos el por qué
+
+concat, selec, proyec, inter/divi
