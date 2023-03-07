@@ -89,7 +89,3 @@ R1 = $\pi$ Nacionalidad (PARTICIPANTE) <br>
 R2 = $\pi$ Nacionalidad (PARTICIPANTE $\bowtie$ CLASIFICACIÓN)
 
 R3 = R1 + R2
-
-para la 8, nos recomienda que independientemente de como lo planteemos, expliquemos el por qué
-
-concat, selec, proyec, inter/divi
