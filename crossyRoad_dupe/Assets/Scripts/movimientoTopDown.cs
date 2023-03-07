@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class movimientoTopDown : MonoBehaviour
 {
-    [SerializeField] private float velocidadMovimiento;
-    [SerializeField] private Vector1 direccion;
+    [SerializeField] float velocidadMovimiento;
+    [SerializeField] Vector2 direccion;
 
-    private RigidBody2D rb2D;
+    public Rigidbody2D rb2D;
 
     // Update is called once per frame
     void Start()
     {
-        rb2D = GetComponent<RigidBody2D>();
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        direccion = new Vector1(Input.GetAxisRaw("vertical")).normalized;
+        direccion = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
     }
 
     void FixedUpdate()
