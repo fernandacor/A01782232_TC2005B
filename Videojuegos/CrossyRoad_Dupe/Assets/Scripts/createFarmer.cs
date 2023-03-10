@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //Script defines constant spawning of new enemies
+// by: Fernanda Cantú Ortega A01782232 10/03/2023
 
 public class createFarmer : MonoBehaviour
 {
@@ -22,7 +23,8 @@ public class createFarmer : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(velocidad * Time.deltaTime, 0, 0);
+        //Defines movement
+        transform.Translate(velocidad * Time.deltaTime, 0, 0); 
     }
 
     void EnterEnemy()
